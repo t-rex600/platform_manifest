@@ -15,6 +15,15 @@
 		   
   <remote  name="th"
            fetch="https://github.com/TeamHorizon" />
+           
+  <remote  name="github"
+           fetch="https://github.com/" />
+  
+  <remote  name="ld"
+           fetch="https://github.com/LiquidDark" />
+           
+  <remote  name="ldd"
+           fetch="https://github.com/LiquidDark-Devices" />                               
 
   <default revision="refs/heads/cm-14.0"
            remote="cm"
@@ -38,12 +47,12 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" />
-  <project path="platform_manifest" name="platform_manifest" remote="th" revision="n-caf" />
+  <project path="platform_manifest" name="platform_manifest" remote="ld" revision="n" />
   <project path="platform_testing" name="platform/platform_testing" remote="aosp" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />
 
-  <project path="build" name="android_build" groups="pdk,tradefed" remote="th" revision="n-caf" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="ld" revision="n" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
@@ -488,7 +497,6 @@
   <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" groups="pdk-fs" />
   <project path="packages/apps/WallpaperPicker" name="android_packages_apps_WallpaperPicker" />
-  <project path="packages/apps/XenonOTA" name="android_packages_apps_XenonOTA" remote="th" revision="n" />
   <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" remote="aosp" />
@@ -603,6 +611,6 @@
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" />
   <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" />
-  <project path="vendor/xenonhd" name="android_vendor_xenonhd" remote="th" revision="n-caf" />
+  <project path="vendor/liquid" name="android_vendor_liquid" remote="ld" revision="n" />
 
 </manifest>
