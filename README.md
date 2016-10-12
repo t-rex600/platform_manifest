@@ -53,12 +53,16 @@ Set up environment:
 If your device is officially supported by https://github.com/LiquidDark-Devices, you can do now:
 
     breakfast <device_codename>
-    
+    (breakfast bullhead)
+        
 ...to automatically pull all missing repositories. Then:
 
     brunch <device_codename>
+    (brunch bullhead)
     
 ...to start compilation process.
+
+     mka
 
 
 Adding support for new device
